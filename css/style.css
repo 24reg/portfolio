@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* setting up the navigation bar/настройка навигационной панели */
+
+.navigation {
+    background: #f00e0e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container_navigation_bar {
+    margin: 0 auto;
+    background-color: #f6f2f2;
+    padding-top: 25px;
+}
+
+header {
+    max-width: 1366px;
+    margin: 0 auto;
+    min-height: 120px;
+    background-color: #212020;
+}
+
+.navigation_bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navigation_bar>div {
+    display: flex;
+    justify-content: center;
+    min-width: 120px;
+    padding: 52px 0px 52px 0px;
+    margin: 0 60px;
+}
+
+.navigation_bar>div:hover {
+    background-color: #b9951e;
+}
+
+.navigation_bar>div>a {
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: normal;
+    letter-spacing: normal;
+    color: #e0e0e0;
+}
+
+/* configuring the first container block/настройка первого блока контейнера */
+
+.first_block_container {
+    background-color: #f6f2f2;
+    min-height: 576px;
+}
+
+.shell_description {
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 85px;
+    margin: 0 auto;
+}
+
+.my_last_name_and_first_name {
+    font-size: 65px;
+    line-height: 72px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.enlarge_the_title {
+    letter-spacing: 0.1em;
+}
+
+.my_description_text {
+    max-width: 512px;
+    margin-top: 18px;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: black;
+}
+
+.photo_with_me {
+    max-width: 551px;
+    min-height: 356px;
+    margin-top: 20px;
+}
+
+a.portfolio_button {
+    display: inline-block;
+    margin-top: 30px;
+    width: 212px;
+    height: 55px;
+    border: none;
+    letter-spacing: normal;
+    background-color: #f00e0e;
+    color: #ffffff;
+    padding: 10px 64px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+a.portfolio_button:hover {
+    background-color: #b9951e;
+}
+
+/* settings of the second container block/настройки второго блока контейнера */
+
+.subscription_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 512px;
+    background-color: #f6f2f2;
+}
+
+.subscription_block>h2 {
+    padding-bottom: 30px;
+    opacity: 0.8;
+    font-size: 42px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.subscription_block>p {
+    padding-bottom: 60px;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.input_email {
+    padding-left: 36px;
+    width: 521px;
+    height: 55px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.input_email:focus {
+    outline: 2px solid #b9951e;
+}
+
+.subscribe {
+    margin: 0 0 0 20px;
+    padding-bottom: 2px;
+    width: 212px;
+    height: 55px;
+    background-color: #f00e0e;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.subscribe:hover {
+    background-color:#b9951e;
+}
+
+/* footer settings/настройки нижнего колонтитула */
+
+footer {
+    height: 100px;
+    background-color: #b9951e;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_roman_grigorev {
+    padding-top: 40px;
+    padding-left: 38vw;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.social_icons {
+    padding-right: 10vw;
+    padding-top: 1vw;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+.social_icons>li {
+    padding-left: 16px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}

@@ -1,0 +1,85 @@
+font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/static/OpenSans-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
+
+.navigation {
+    background: #f00e0e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container_navigation_bar {
+    margin: 0 auto;
+    background-color: #f6f2f2;
+    padding-top: 25px;
+}
+
+header {
+    max-width: 1366px;
+    margin: 0 auto;
+    min-height: 120px;
+    background-color: #212020;
+}
+
+.navigation_bar>ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 100px;
+}
+
+.navigation_bar>ul>li {
+    display: flex;
+    justify-content: center;
+    min-width: 120px;
+    padding: 52px 0px 52px 0px;
+    margin: 0 60px;
+}
+
+.navigation_bar>ul>li:hover {
+    background-color: #b9951e;
+}
+
+.navigation_bar>ul li>a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    color: #e0e0e0;
+}
