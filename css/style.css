@@ -32,62 +32,65 @@
 
 /* setting up the navigation bar/настройка навигационной панели */
 
-.navigation {
+.active {
     background: #f00e0e;
 }
 
-* {
+* { /* универсальный селектор для одинакового отображения во всех браузерах */
     box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
+.logo {
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+
 .container_navigation_bar {
     margin: 0 auto;
-    background-color: #f6f2f2;
-    padding-top: 25px;
+    background-color: #747474;
+    /* padding-top: 25px; */ /* опускаем ниже навигационную панель */
 }
 
 header {
-    max-width: 1366px;
     margin: 0 auto;
-    min-height: 120px;
-    background-color: #212020;
+    background-color: #747474;
 }
 
-.navigation_bar {
+.navigation_bar>ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
 }
 
-.navigation_bar>div {
+.navigation_bar>ul>li {
     display: flex;
     justify-content: center;
     min-width: 120px;
-    padding: 52px 0px 52px 0px;
+    padding: 22.5px 0px 22.5px 0px;
     margin: 0 60px;
 }
 
-.navigation_bar>div:hover {
+.navigation_bar>ul>li:hover {
     background-color: #b9951e;
 }
 
-.navigation_bar>div>a {
-    text-decoration: none;
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: normal;
-    letter-spacing: normal;
-    color: #e0e0e0;
+.navigation_bar>ul>li>a {
+    text-decoration: none; /* убираем нижнее подчёркивание ссылок */
+    font-size: 22px; /* задаём размер шрифта */
+    color: #e0e0e0; /* задаём цвет текста */
 }
 
 /* configuring the first container block/настройка первого блока контейнера */
 
 .first_block_container {
-    background-color: #f6f2f2;
-    min-height: 576px;
+    background-color: #0f0f0f;
+    /* min-height: 576px; */
 }
 
 .shell_description {
@@ -104,7 +107,7 @@ header {
     line-height: 72px;
     font-weight: 800;
     letter-spacing: 0.1em;
-    color: black;
+    color: #e0e0e0;
 }
 
 .enlarge_the_title {
@@ -118,7 +121,7 @@ header {
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    color: black;
+    color: #e0e0e0;
 }
 
 .photo_with_me {
@@ -135,7 +138,7 @@ a.portfolio_button {
     border: none;
     letter-spacing: normal;
     background-color: #f00e0e;
-    color: #ffffff;
+    color: #e0e0e0;
     padding: 10px 64px;
     border-radius: 5px;
     text-decoration: none;
@@ -156,27 +159,27 @@ a.portfolio_button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 512px;
-    background-color: #f6f2f2;
+    min-height: 500px;
+    background-color: #0f0f0f;
 }
 
 .subscription_block>h2 {
     padding-bottom: 30px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     font-size: 42px;
-    line-height: 24px;
+    /* line-height: 24px; */
     font-weight: 800;
-    letter-spacing: normal;
-    color: #000000;
+    /* letter-spacing: normal; */
+    color: #e0e0e0;
 }
 
 .subscription_block>p {
     padding-bottom: 60px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     font-size: 16px;
-    line-height: 28px;
-    font-weight: normal;
-    color: #000000;
+    /* line-height: 28px; */
+    /* font-weight: normal; */
+    color: #e0e0e0;
 }
 
 .input_email {
@@ -186,10 +189,11 @@ a.portfolio_button:hover {
     resize: none;
     border: none;
     border-radius: 5px;
+    background-color: #e0e0e0;
 }
 
 .input_email:focus {
-    outline: 2px solid #b9951e;
+    outline: 2px solid #f00e0e;
 }
 
 .subscribe {
@@ -205,7 +209,7 @@ a.portfolio_button:hover {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.025em;
-    color: #ffffff;
+    color: #e0e0e0;
 }
 
 .subscribe:hover {
@@ -215,8 +219,8 @@ a.portfolio_button:hover {
 /* footer settings/настройки нижнего колонтитула */
 
 footer {
-    height: 100px;
-    background-color: #b9951e;
+    height: 71px;
+    background-color: #747474;
 }
 
 .container {
@@ -225,23 +229,23 @@ footer {
 }
 
 .footer_roman_grigorev {
-    padding-top: 40px;
-    padding-left: 38vw;
+    padding-top: 28px;
+    padding-left: 700px;
     font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
+    /* line-height: 26px; */
+    /* font-weight: 400; */
     color: #000000;
 }
 
 .social_icons {
-    padding-right: 10vw;
-    padding-top: 1vw;
-    display: flex;
-    justify-content: center;
+    padding-right: 150px;
+    /* padding-top: center; */
+    display: flex; /* располагаем иконки соцсетей горизонтально */
+    /* justify-content: center; */
     list-style: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 0;
+    margin-top: 18px;
+    /* margin-bottom: 1rem; */
+    /* padding-left: 0; */
 }
 
 .social_icons>li {

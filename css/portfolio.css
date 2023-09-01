@@ -88,7 +88,7 @@ header {
 
 footer {
     height: 100px;
-    background-color: #ee7373;
+    background-color: #b9951e;
 }
 
 .container {
@@ -103,4 +103,21 @@ footer {
     line-height: 26px;
     font-weight: 400;
     color: #000000;
+}
+
+.social_icons {
+    padding-right: 10vw;
+    padding-top: 1vw;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+.social_icons>li {
+    padding-left: 16px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
