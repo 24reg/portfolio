@@ -1,4 +1,4 @@
-font-face {
+@font-face {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     src: url('../fonts/static/OpenSans-Regular.ttf');
@@ -30,27 +30,37 @@ font-face {
     font-weight: 800;
 }
 
-.navigation {
+/* setting up the navigation bar/настройка навигационной панели */
+
+.active {
     background: #f00e0e;
 }
 
 * {
+    /* универсальный селектор для одинакового отображения во всех браузерах */
     box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
+.logo {
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+
 .container_navigation_bar {
     margin: 0 auto;
-    background-color: #f6f2f2;
-    padding-top: 25px;
+    background-color: #747474;
+    /* padding-top: 25px; */
+    /* опускаем ниже навигационную панель */
 }
 
 header {
-    max-width: 1366px;
     margin: 0 auto;
-    min-height: 120px;
-    background-color: #212020;
+    background-color: #747474;
 }
 
 .navigation_bar>ul {
@@ -58,15 +68,13 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    text-transform: uppercase;
-    margin-right: 100px;
 }
 
 .navigation_bar>ul>li {
     display: flex;
     justify-content: center;
     min-width: 120px;
-    padding: 52px 0px 52px 0px;
+    padding: 22.5px 0px 22.5px 0px;
     margin: 0 60px;
 }
 
@@ -74,12 +82,135 @@ header {
     background-color: #b9951e;
 }
 
-.navigation_bar>ul li>a {
+.navigation_bar>ul>li>a {
     text-decoration: none;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: normal;
+    /* убираем нижнее подчёркивание ссылок */
+    font-size: 22px;
+    /* задаём размер шрифта */
+    color: #e0e0e0;
+    /* задаём цвет текста */
+}
+
+/* configuring the first container block/настройка первого блока контейнера */
+
+.first_block_container {
+    background-color: #0f0f0f;
+    /* min-height: 576px; */
+}
+
+.shell_description {
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 85px;
+    margin: 0 auto;
+}
+
+.my_last_name_and_first_name {
+    font-size: 65px;
+    line-height: 72px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
     color: #e0e0e0;
 }
+
+.enlarge_the_title {
+    letter-spacing: 0.1em;
+}
+
+.my_description_text {
+    max-width: 512px;
+    margin-top: 18px;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.photo_with_me {
+    max-width: 550px;
+    min-height: 360px;
+    margin-top: 20px;
+}
+
+/* настройка второго блока */
+
+.second_block_container {
+    background-color: #0f0f0f;
+    min-height: 600px;
+}
+
+.last_block {
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 85px;
+    margin: 0 auto;
+}
+
+.my_last_name_and_first_name {
+    font-size: 65px;
+    line-height: 72px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #e0e0e0;
+}
+
+.my_description_text {
+    max-width: 512px;
+    margin-top: 18px;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.photo_with_me {
+    max-width: 550px;
+    min-height: 360px;
+    margin-top: 20px;
+}
+
+/* footer settings/настройки нижнего колонтитула */
+
+footer {
+    height: 71px;
+    background-color: #747474;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_roman_grigorev {
+    padding-top: 28px;
+    padding-left: 700px;
+    font-size: 18px;
+    /* line-height: 26px; */
+    /* font-weight: 400; */
+    color: #000000;
+}
+
+.social_icons {
+    padding-right: 150px;
+    /* padding-top: center; */
+    display: flex;
+    /* располагаем иконки соцсетей горизонтально */
+    /* justify-content: center; */
+    list-style: none;
+    margin-top: 18px;
+    /* margin-bottom: 1rem; */
+    /* padding-left: 0; */
+}
+
+.social_icons>li {
+    padding-left: 16px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+

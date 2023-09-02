@@ -36,7 +36,8 @@
     background: #f00e0e;
 }
 
-* { /* универсальный селектор для одинакового отображения во всех браузерах */
+* {
+    /* универсальный селектор для одинакового отображения во всех браузерах */
     box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -53,7 +54,8 @@
 .container_navigation_bar {
     margin: 0 auto;
     background-color: #747474;
-    /* padding-top: 25px; */ /* опускаем ниже навигационную панель */
+    /* padding-top: 25px; */
+    /* опускаем ниже навигационную панель */
 }
 
 header {
@@ -81,9 +83,12 @@ header {
 }
 
 .navigation_bar>ul>li>a {
-    text-decoration: none; /* убираем нижнее подчёркивание ссылок */
-    font-size: 22px; /* задаём размер шрифта */
-    color: #e0e0e0; /* задаём цвет текста */
+    text-decoration: none;
+    /* убираем нижнее подчёркивание ссылок */
+    font-size: 22px;
+    /* задаём размер шрифта */
+    color: #e0e0e0;
+    /* задаём цвет текста */
 }
 
 /* configuring the first container block/настройка первого блока контейнера */
@@ -125,12 +130,12 @@ header {
 }
 
 .photo_with_me {
-    max-width: 551px;
-    min-height: 356px;
+    max-width: 550px;
+    min-height: 360px;
     margin-top: 20px;
 }
 
-a.portfolio_button {
+a.about_me_button {
     display: inline-block;
     margin-top: 30px;
     width: 212px;
@@ -138,6 +143,7 @@ a.portfolio_button {
     border: none;
     letter-spacing: normal;
     background-color: #f00e0e;
+    border-color: #f00e0e;
     color: #e0e0e0;
     padding: 10px 64px;
     border-radius: 5px;
@@ -148,7 +154,7 @@ a.portfolio_button {
     font-weight: 700;
 }
 
-a.portfolio_button:hover {
+a.about_me_button:hover {
     background-color: #b9951e;
 }
 
@@ -213,7 +219,7 @@ a.portfolio_button:hover {
 }
 
 .subscribe:hover {
-    background-color:#b9951e;
+    background-color: #b9951e;
 }
 
 /* footer settings/настройки нижнего колонтитула */
@@ -240,7 +246,8 @@ footer {
 .social_icons {
     padding-right: 150px;
     /* padding-top: center; */
-    display: flex; /* располагаем иконки соцсетей горизонтально */
+    display: flex;
+    /* располагаем иконки соцсетей горизонтально */
     /* justify-content: center; */
     list-style: none;
     margin-top: 18px;
