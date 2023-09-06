@@ -6,29 +6,6 @@
     font-weight: 400;
 }
 
-@font-face {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    src: url('../fonts/static/OpenSans-SemiBold.ttf');
-    font-style: normal;
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    src: url('../fonts/static/OpenSans-Bold.ttf');
-    font-style: normal;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    src: url('../fonts/static/OpenSans-ExtraBold.ttf');
-    font-style: normal;
-    font-weight: 800;
-}
 
 /* setting up the navigation bar/настройка навигационной панели */
 
@@ -40,16 +17,7 @@
     /* универсальный селектор для одинакового отображения во всех браузерах */
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
-
-.logo {
-    justify-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
 
 .container_navigation_bar {
     margin: 0 auto;
@@ -108,7 +76,6 @@ header {
 }
 
 .my_last_name_and_first_name {
-    font-size: 65px;
     line-height: 72px;
     font-weight: 800;
     letter-spacing: 0.1em;
@@ -238,8 +205,6 @@ footer {
     padding-top: 28px;
     padding-left: 700px;
     font-size: 18px;
-    /* line-height: 26px; */
-    /* font-weight: 400; */
     color: #000000;
 }
 
@@ -248,11 +213,8 @@ footer {
     /* padding-top: center; */
     display: flex;
     /* располагаем иконки соцсетей горизонтально */
-    /* justify-content: center; */
     list-style: none;
     margin-top: 18px;
-    /* margin-bottom: 1rem; */
-    /* padding-left: 0; */
 }
 
 .social_icons>li {

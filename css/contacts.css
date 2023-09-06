@@ -40,16 +40,7 @@
     /* универсальный селектор для одинакового отображения во всех браузерах */
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
-
-.logo {
-    justify-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
 
 .container_navigation_bar {
     margin: 0 auto;
@@ -358,7 +349,6 @@ header {
 /* Стили для заголовков левой колонки */
 .topic {
     font-size: 18px;
-    font-weight: 500;
     margin-bottom: 7px;
     color: #b9951e;
 }
@@ -374,8 +364,6 @@ header {
 /* Заголовок правой колонки */
 
 .topic-text {
-    font-size: 24px;
-    font-weight: 600;
     color: #b9951e;
     margin-bottom: 10px;
 }
@@ -471,21 +459,15 @@ footer {
     padding-top: 28px;
     padding-left: 700px;
     font-size: 18px;
-    /* line-height: 26px; */
-    /* font-weight: 400; */
     color: #000000;
 }
 
 .social_icons {
     padding-right: 150px;
-    /* padding-top: center; */
     display: flex;
     /* располагаем иконки соцсетей горизонтально */
-    /* justify-content: center; */
     list-style: none;
     margin-top: 18px;
-    /* margin-bottom: 1rem; */
-    /* padding-left: 0; */
 }
 
 .social_icons>li {
